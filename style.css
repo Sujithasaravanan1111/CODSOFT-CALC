@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000; /* deeper black */
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* CALCULATOR BOX */
+.calculator {
+    background: #111;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+    text-align: center;
+    border: 1px solid rgba(0,255,255,0.2);
+}
+
+/* TITLE */
+h2 {
+    color: #00ffff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* DISPLAY */
+#display {
+    width: 100%;
+    height: 55px;
+    margin: 15px 0;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #000;
+    color: #00ffff;
+    box-shadow: inset 0 0 10px rgba(0,255,255,0.2);
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 12px;
+}
+
+/* BUTTON STYLE */
+button {
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #1f1f1f;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* BUTTON CLICK EFFECT */
+button:active {
+    transform: scale(0.95);
+}
+
+/* OPERATORS */
+.op {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+/* EQUAL BUTTON */
+.equal {
+    grid-column: span 2;
+    background: #00ffff;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.equal:hover {
+    background: #00e6e6;
+}
+
+/* OPTIONAL: SCROLL SMOOTHNESS */
+body {
+    -webkit-font-smoothing: antialiased;
+}
